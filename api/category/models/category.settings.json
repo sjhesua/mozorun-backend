@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "taxes": {
+      "type": "enumeration",
+      "enum": [
+        "Labor_fee",
+        "taxes_fees"
+      ]
+    },
+    "Mark_Category_As_Side_Order": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "sub_categories": {
+      "collection": "sub-categories",
+      "via": "category"
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
+    },
+    "store": {
+      "via": "categories",
+      "model": "restaurant"
+    }
+  }
+}

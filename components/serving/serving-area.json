@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_serving_serving_areas",
+  "info": {
+    "name": "servingArea",
+    "icon": "car-alt"
+  },
+  "options": {},
+  "attributes": {
+    "serving": {
+      "type": "enumeration",
+      "enum": [
+        "NoServingRestrictions",
+        "MentionARadius"
+      ]
+    },
+    "ServingRadius": {
+      "type": "decimal"
+    }
+  }
+}

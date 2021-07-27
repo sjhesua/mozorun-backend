@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "CODstatus": {
+      "type": "boolean"
+    },
+    "payLaterStatus": {
+      "type": "boolean"
+    },
+    "loyaltyPoints": {
+      "type": "integer",
+      "default": 0
+    },
+    "redeemPoints": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

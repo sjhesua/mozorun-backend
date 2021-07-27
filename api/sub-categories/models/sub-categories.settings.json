@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_categories",
+  "info": {
+    "name": "Sub Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Mark_Category_As_Side_Order": {
+      "type": "boolean"
+    },
+    "taxes": {
+      "type": "enumeration",
+      "enum": [
+        "Labor_fee",
+        "taxes_fees"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "category": {
+      "via": "sub_categories",
+      "model": "category"
+    },
+    "products": {
+      "via": "sub_category",
+      "collection": "product"
+    }
+  }
+}

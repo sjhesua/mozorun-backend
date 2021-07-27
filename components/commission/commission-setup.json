@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_commission_commission_setups",
+  "info": {
+    "name": "CommissionSetup",
+    "icon": "donate"
+  },
+  "options": {},
+  "attributes": {
+    "Commission": {
+      "type": "enumeration",
+      "enum": [
+        "fixedAmount",
+        "percentage"
+      ]
+    }
+  }
+}

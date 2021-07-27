@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "MINIMUM_QUANTITY_TO_ORDER": {
+      "type": "biginteger",
+      "default": "1"
+    },
+    "MAXIMUM_QUANTITY_PER_ORDER": {
+      "type": "biginteger"
+    },
+    "COST_PRICE": {
+      "type": "string"
+    },
+    "SKU": {
+      "type": "string"
+    },
+    "ORDER_PREPARATION_TIME": {
+      "type": "biginteger"
+    },
+    "INVENTORY": {
+      "type": "boolean"
+    },
+    "taxes": {
+      "type": "enumeration",
+      "enum": [
+        "Labor_fee",
+        "taxes_fees"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variants"
+    },
+    "category": {
+      "model": "category",
+      "via": "products"
+    },
+    "sub_category": {
+      "model": "sub-categories",
+      "via": "products"
+    }
+  }
+}
