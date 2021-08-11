@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_weekday_specific_time_mondays",
+  "info": {
+    "name": "specificTimeMonday",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "monday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_details_details",
+  "info": {
+    "name": "details",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "details_products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "details.details-products"
+    }
+  }
+}

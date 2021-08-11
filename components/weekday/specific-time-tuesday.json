@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_weekday_specific_time_tuesdays",
+  "info": {
+    "name": "specificTimeTuesday",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "tuesday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

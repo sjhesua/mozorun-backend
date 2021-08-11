@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_additional_information_additional_informations",
+  "info": {
+    "name": "additionalInformation",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "contact_delivery": {
+      "type": "text"
+    },
+    "pictureOfTheExactDesignatedLocation": {
+      "type": "string"
+    }
+  }
+}

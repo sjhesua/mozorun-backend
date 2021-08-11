@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_weekday_weekdays",
+  "info": {
+    "name": "Weekday",
+    "icon": "calendar-check"
+  },
+  "options": {},
+  "attributes": {
+    "specificTimeSunday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-sunday"
+    },
+    "specificTimeMonday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-monday"
+    },
+    "specificTimeTuesday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-tuesday"
+    },
+    "specificTimeWednesday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-wednesday"
+    },
+    "specificTimeThursday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-thursday"
+    },
+    "specificTimeFriday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-friday"
+    },
+    "specificTimeSaturday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.specific-time-saturday"
+    }
+  }
+}

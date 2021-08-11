@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_weekday_specific_time_fridays",
+  "info": {
+    "name": "specificTimeFriday",
+    "icon": "calendar-times"
+  },
+  "options": {},
+  "attributes": {
+    "friday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -115,6 +115,15 @@
     "categories": {
       "collection": "category",
       "via": "store"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "bannerweb_url": {
+      "type": "string"
+    },
+    "bannerphone_url": {
+      "type": "string"
     }
   }
 }

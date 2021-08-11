@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_weekday_specific_time_wednesdays",
+  "info": {
+    "name": "specificTimeWednesday",
+    "icon": "calendar-minus"
+  },
+  "options": {},
+  "attributes": {
+    "wednesday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

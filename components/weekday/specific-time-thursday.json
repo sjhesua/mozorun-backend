@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_weekday_specific_time_thursdays",
+  "info": {
+    "name": "specificTimeThursday",
+    "icon": "calendar-plus"
+  },
+  "options": {},
+  "attributes": {
+    "thursday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

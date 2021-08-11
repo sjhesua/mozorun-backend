@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configurations",
+  "info": {
+    "name": "configuration"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dateWiseAvailability": {
+      "type": "enumeration",
+      "enum": [
+        "EveryDay",
+        "SpecificDays"
+      ]
+    },
+    "dateRange1": {
+      "type": "date"
+    },
+    "dateRange2": {
+      "type": "date"
+    },
+    "timeWiseAvailability": {
+      "type": "enumeration",
+      "enum": [
+        "FullTime",
+        "SpecificTime"
+      ]
+    },
+    "Weekday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "weekday.weekday"
+    },
+    "surgeOnDelivery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "delivery.surge-on-delivery"
+    },
+    "scheduling": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scheduling.scheduling"
+    },
+    "acceptRejectOrder": {
+      "type": "boolean"
+    },
+    "orderAcceptanceTime": {
+      "type": "biginteger"
+    },
+    "storeslevelLoyaltyEarning": {
+      "type": "boolean"
+    },
+    "showStoresTiming": {
+      "type": "boolean"
+    },
+    "orderPreparationTime": {
+      "type": "biginteger"
+    },
+    "applyBufferForEveryday": {
+      "type": "boolean"
+    },
+    "bufferBeforeTheFirstSlotAppears": {
+      "type": "biginteger"
+    },
+    "timeRangeForScheduledOrders": {
+      "type": "biginteger"
+    },
+    "minimumOrderAmount": {
+      "type": "decimal"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    },
+    "TOOKANTasks": {
+      "type": "boolean"
+    },
+    "catalogue": {
+      "type": "boolean"
+    },
+    "emailNotifications": {
+      "type": "boolean"
+    },
+    "reminderforScheduledOrders": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reminderfor-scheduled-orders.reminderfor-scheduled-orders"
+    },
+    "workflow": {
+      "type": "component",
+      "repeatable": false,
+      "component": "workflow.workflow"
+    },
+    "checkoutTemplate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "checkout-template.checkout-template"
+    }
+  }
+}

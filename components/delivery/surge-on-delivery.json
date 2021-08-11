@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_delivery_surge_on_deliveries",
+  "info": {
+    "name": "surgeOnDelivery",
+    "icon": "biking"
+  },
+  "options": {},
+  "attributes": {
+    "surgeOnDelivery": {
+      "type": "boolean"
+    },
+    "sunday": {
+      "type": "boolean"
+    },
+    "monday": {
+      "type": "boolean"
+    },
+    "tuesday": {
+      "type": "boolean"
+    },
+    "wednesday": {
+      "type": "boolean"
+    },
+    "thursday": {
+      "type": "boolean"
+    },
+    "friday": {
+      "type": "boolean"
+    },
+    "saturday": {
+      "type": "boolean"
+    }
+  }
+}

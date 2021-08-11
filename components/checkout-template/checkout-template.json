@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_checkout_template_checkout_templates",
+  "info": {
+    "name": "checkoutTemplate",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "mandatory": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "orders"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_id": {
+      "type": "string"
+    },
+    "customer": {
+      "type": "string"
+    },
+    "store_name": {
+      "type": "string"
+    },
+    "store_phone": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "order_time": {
+      "type": "string"
+    },
+    "scheduled_time": {
+      "type": "string"
+    },
+    "client_rating": {
+      "type": "string"
+    },
+    "delivery_method": {
+      "type": "string"
+    },
+    "customer_address": {
+      "type": "string"
+    },
+    "client_review": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "admin_commission": {
+      "type": "string"
+    },
+    "store_earning": {
+      "type": "string"
+    },
+    "order_preparation_time": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "promo_applied": {
+      "type": "string"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "transaction_status": {
+      "type": "string"
+    },
+    "tookan_pickup_id": {
+      "type": "string"
+    },
+    "tookan_delivery_id": {
+      "type": "string"
+    },
+    "additionalInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "additional-information.additional-information"
+    },
+    "subtotal": {
+      "type": "string"
+    },
+    "taxes": {
+      "type": "string"
+    },
+    "tip": {
+      "type": "string"
+    },
+    "delivery_charge": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "string"
+    },
+    "total_amount": {
+      "type": "string"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "details.details"
+    },
+    "order_History": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-history.order-history"
+    },
+    "bill_summary": {
+      "type": "string"
+    }
+  }
+}

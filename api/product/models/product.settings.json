@@ -72,6 +72,9 @@
     "sub_category": {
       "model": "sub-categories",
       "via": "products"
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }

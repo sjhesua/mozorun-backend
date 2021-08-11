@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_order_history_order_histories",
+  "info": {
+    "name": "order_History",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "order_status": {
+      "type": "string"
+    },
+    "through": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reminderfor_scheduled_orders_reminderfor_scheduled_orders",
+  "info": {
+    "name": "reminderforScheduledOrders",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "reminderForStores": {
+      "type": "biginteger"
+    },
+    "reminderforClient": {
+      "type": "biginteger"
+    }
+  }
+}

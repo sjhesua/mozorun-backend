@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_scheduling_schedulings",
+  "info": {
+    "name": "scheduling",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "onDemand": {
+      "type": "boolean"
+    },
+    "scheduling": {
+      "type": "boolean"
+    },
+    "slotInterval": {
+      "type": "biginteger"
+    }
+  }
+}
