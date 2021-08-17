@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "sub_categories",
   "info": {
-    "name": "Sub Categories"
+    "name": "Sub Categories",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -37,13 +38,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "category": {
-      "via": "sub_categories",
-      "model": "category"
-    },
     "products": {
       "via": "sub_category",
       "collection": "product"
+    },
+    "category": {
+      "via": "sub_categories",
+      "model": "category"
     }
   }
 }

@@ -2,7 +2,8 @@
   "collectionName": "components_variants_variants",
   "info": {
     "name": "variants",
-    "icon": "angle-double-right"
+    "icon": "angle-double-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -21,6 +22,10 @@
       "type": "component",
       "repeatable": true,
       "component": "variants.types"
+    },
+    "SELECT_EXACTLY": {
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }

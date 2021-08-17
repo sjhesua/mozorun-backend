@@ -65,16 +65,16 @@
       "repeatable": true,
       "component": "variants.variants"
     },
-    "category": {
-      "model": "category",
-      "via": "products"
-    },
     "sub_category": {
       "model": "sub-categories",
       "via": "products"
     },
     "image_url": {
       "type": "string"
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
     }
   }
 }

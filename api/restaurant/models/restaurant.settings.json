@@ -112,10 +112,6 @@
       "repeatable": false,
       "component": "commission.commission"
     },
-    "categories": {
-      "collection": "category",
-      "via": "store"
-    },
     "logo_url": {
       "type": "string"
     },
@@ -124,6 +120,13 @@
     },
     "bannerphone_url": {
       "type": "string"
+    },
+    "categories": {
+      "via": "store",
+      "collection": "category"
+    },
+    "configuration": {
+      "model": "configuration"
     }
   }
 }

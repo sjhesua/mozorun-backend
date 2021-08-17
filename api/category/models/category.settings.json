@@ -38,6 +38,10 @@
       "required": false,
       "pluginOptions": {}
     },
+    "store": {
+      "via": "categories",
+      "model": "restaurant"
+    },
     "sub_categories": {
       "collection": "sub-categories",
       "via": "category"
@@ -45,10 +49,6 @@
     "products": {
       "via": "category",
       "collection": "product"
-    },
-    "store": {
-      "via": "categories",
-      "model": "restaurant"
     }
   }
 }
